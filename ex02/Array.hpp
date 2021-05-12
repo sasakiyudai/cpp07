@@ -9,7 +9,7 @@ class Array
 		{
 
 		};
-		Array(unsigned int n):array(new T[n]()), len(n)
+		Array(unsigned int n):array(new T[n]), len(n)
 		{
 
 		};
