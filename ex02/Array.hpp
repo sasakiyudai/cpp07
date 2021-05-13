@@ -40,6 +40,12 @@ class Array
 				throw Array::OutLimitsException();
 			return (this->array[i]);
 		}
+		const T &operator[](int i) const
+		{
+			if (i < 0 || len - 1 < i)
+				throw Array::OutLimitsException();
+			return (this->array[i]);
+		}
 		class OutLimitsException: public std::exception {
 			const char* what() const throw()
 			{
